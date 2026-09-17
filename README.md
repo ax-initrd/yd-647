@@ -73,9 +73,6 @@ Every place track data enters or leaves this tool (`--track1`/`--track2`/
     ascii: 'ASCII DATA HERE'
     hex:   41 53 43 49 49 20 44 41 54 41 20 48 45 52 45
   ```
-  This is what makes it possible to tell a genuine space (`0x20`, as in the
-  padded name field above) apart from some other byte that merely displays
-  as blank.
 - `read --output file.json` always stores tracks as `hex:...` strings (for
   byte-for-byte fidelity), so `write --input file.json` round-trips a read
   exactly, and hand-written JSON files can use either `hex:...` or plain
